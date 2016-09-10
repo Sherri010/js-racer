@@ -3,8 +3,9 @@ body {
 	 background-image: url('milky.jpg');
 	 background-repeat: no-repeat;
 	 background-size: cover;
-	 margin:0px; padding:10px;
+	 margin:0px; padding:5px;
 	 height: 90vh;
+	 font-family: 'Rajdhani', sans-serif;
 }
 .title{
 	font-family: 'Bungee Shade', cursive;
@@ -13,7 +14,19 @@ body {
 	letter-spacing: 5px;
 	text-align: center;
 }
-.blue { color:#203f60;
+
+#start {
+	padding:10px;
+	background:rgba(163, 194, 194,0.5);
+	font-family: 'Rajdhani', sans-serif;
+	border:none;
+	color:#fff;
+	border-radius: 3px;
+	margin:0 auto;
+	display:block;
+}
+
+.blue {
 	   	position:absolute;
  	   	left:0px;
 	    top:0px;
@@ -24,7 +37,7 @@ body {
 
 }
 
-.red {color:maroon;
+.red {
 	   	position:absolute;
       left:0px;
 		  top:200px;
@@ -44,22 +57,22 @@ body {
 #finish-line {}
 #playground{
 	 min-height: 510px;
-	 max-width: 1200px;
-	 margin:100px 200px 100px 200px;
-  	position:relative;
-	border-right:dotted 5px #ffdd99;
+	 max-width: 1400px;
+	 margin:50px 50px 100px 200px;
+   position:relative;
+	 border-right:dotted 5px #ffdd99;
 }
 #info-bar {
 	width:80%;
 	margin:0 auto;
 	min-height:100px;
-	border:1px solid white;
+/*	border:1px solid white;*/
 	padding:20px 40px;
 }
-.timer {
-	border:solid 1px red;
+#timer {
 	float:left;
-	color:red;
+	color:#fff;
+	font-size: 40px;
 }
 .scores{
 	border:solid 1px blue;
