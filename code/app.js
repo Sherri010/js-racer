@@ -30,8 +30,8 @@ function addMiles(e){
 }
 
 function scoreCheck(){
-	if(p1IsAt >= 950) { alert("Red Laser Win!");}
-	if(p2IsAt >= 950) { alert("Blue Laser Win!");}
+	if(p1IsAt >= 1150) { alert("Red Laser Win!");}
+	if(p2IsAt >= 1150) { alert("Blue Laser Win!");}
 }
 
 
