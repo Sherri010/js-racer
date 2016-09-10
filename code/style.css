@@ -4,25 +4,42 @@ body {
 	 background-repeat: no-repeat;
 	 background-size: cover;
 	 margin:0px; padding:10px;
+	 	 min-height: 100vh;
 }
 
 .blue { color:#203f60;
 	   	position:absolute;
- left:0px;
- top:100px;
-	width:80px;
-	padding:10px;
-	font-size:20px;
+ 	   	left:0px;
+	    top:0px;
+	    width:80px;
+	    padding:10px;
+	    font-size:20px;
+	    z-index: 5;
+
 }
 
 .red {color:maroon;
-		position:absolute;
-  left:0px;
-  top:200px;
-	width:80px;
-	padding:10px;
-	font-size:20px;
+	   	position:absolute;
+      left:0px;
+		  top:200px;
+			width:80px;
+			padding:10px;
+			font-size:20px;
+			z-index: 5;
+
 }
 
+.rotated {
+	  -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
+    -ms-transform: rotate(90deg);      /* to support IE 9 */
+    transform: rotate(90deg);
+}
 
-#playground{ margin-top:200px; position:relative;}
+#finish-line {}
+#playground{
+	 min-height: 510px;
+	 max-width: 1000px;
+	 margin:200px 200px 50px 200px;
+  	position:relative;
+	border-right:dotted 5px #ffdd99;
+}

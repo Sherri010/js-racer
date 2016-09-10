@@ -1,14 +1,14 @@
 
-document.getElementsByTagName('body')[0].addEventListener("keydown",scoreCheck);
-var player1= document.getElementById('p1');
-var player2= document.getElementById('p2');
-var p1IsAt=0;
-var p2IsAt=0;
+document.getElementsByTagName('body')[0].addEventListener("keydown",addMiles);
+var player1 = document.getElementById('p1');
+var player2 = document.getElementById('p2');
+var p1IsAt = 0;
+var p2IsAt = 0;
 
 
 
 
-function scoreCheck(e){
+function addMiles(e){
 
 	//console.log("running")
 	if(e.keyCode == 38) {
@@ -16,15 +16,23 @@ function scoreCheck(e){
 		console.log( p1IsAt);
 		player1.style.left=p1IsAt.toString()+"px";
 		//console.log("playerf1");
+
+		scoreCheck();
 	}
 	if(e.keyCode == 40){
 		p2IsAt+=10;
 		player2.style.left=p2IsAt.toString()+"px";
 		//console.log("player2")
+
+		scoreCheck();
 	}
 
 }
 
+function scoreCheck(){
+	if(p1IsAt >= 950) { alert("Red Laser Win!");}
+	if(p2IsAt >= 950) { alert("Blue Laser Win!");}
+}
 
 
 
