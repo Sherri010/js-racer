@@ -1,17 +1,28 @@
-.blue {
 
-   background-color:#8cb1d9;
+body {
+	 background-image: url('milky.jpg');
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 margin:0px; padding:10px;
 }
 
-.red {
-  
-   background-color:#ff9999;
-}
-
-.player {
+.blue { color:#203f60;
+	   	position:absolute;
+ left:0px;
+ top:100px;
 	width:80px;
-	margin:10px;
 	padding:10px;
 	font-size:20px;
 }
-#playground{ margin-top:200px; }
+
+.red {color:maroon;
+		position:absolute;
+  left:0px;
+  top:200px;
+	width:80px;
+	padding:10px;
+	font-size:20px;
+}
+
+
+#playground{ margin-top:200px; position:relative;}
