@@ -8,20 +8,24 @@
 <link href="shipone.png" rel="icon">
 </head>
 <body>
-<h1 class="title">Battle of the Voyagers</h1>
-<button id="start">Let's Begin </button>
+<h1 class="title">Intergalactic Race</h1>
+
 <div id="playground">
    <div class="blue rotated" id="p1"><img src="shipfour.gif"></div>
    <div class="red rotated" id="p2"><img src="shiptwo.gif"></div>
  </div>
 <div id="info-bar">
-   <div id="timer"></div>
- <div class="scores">
-	 <p> Score Board </p>
- <ul>
-	 <li class="team-red">Red ship:</li>
-	 <li class="team-blue">Blue ship:</li>
-</ul>
+  <div id="navs">
+<button id="start" class="button">Let's Begin </button>
+<button id="reset" class="button">Reset the game </button>
+	</div>
+	 <div id="timer"></div>
+   <div class="scores">
+		 <p> Score Board </p>
+		 <ul>
+			 <li class="team-red">Red ship: 0 points</li>
+			 <li class="team-blue">Blue ship: 0 points</li>
+		</ul>
   </div>
 </div>
  <script src="app.js"></script>

@@ -17,7 +17,7 @@ p {
  text-decoration: underline;
  margin-left:15px;
 }
-
+li {font-size:22px;}
 .title{
 	font-family: 'Bungee Shade', cursive;
 	font-size: 60px;
@@ -26,15 +26,17 @@ p {
 	text-align: center;
 }
 
-#start {
+
+.button {
 	padding:10px;
 	background:rgba(163, 194, 194,0.5);
 	font-family: 'Rajdhani', sans-serif;
+	font-size:25px;
 	border:none;
 	color:#fff;
 	border-radius: 3px;
-	margin:0 auto;
 	display:block;
+	margin:5px;
 }
 
 .blue {
@@ -43,7 +45,7 @@ p {
 	    top:0px;
 	    width:80px;
 	    padding:10px;
-	    font-size:20px;
+	    font-size:16px;
 	    z-index: 5;
 
 }
@@ -54,7 +56,7 @@ p {
 		  top:200px;
 			width:80px;
 			padding:10px;
-			font-size:20px;
+			font-size:16px;
 			z-index: 5;
 
 }
@@ -69,27 +71,43 @@ p {
 #playground{
 	 min-height: 510px;
 	 max-width: 1400px;
-	 margin:50px 50px 50px 200px;
+	 margin:100px 50px 50px 200px;
    position:relative;
 	 border-right:dotted 5px #ffdd99;
 }
 #info-bar {
-	width:80%;
+	width:1000px;
 	margin:0 auto;
 	min-height:100px;
 /*	border:1px solid white;*/
 	padding:0px 40px;
 }
+#navs{
+	display: inline-block;
+	width:30%;
+}
 #timer {
-	float:left;
 	color:#fff;
 	font-size: 40px;
 	display: inline-block;
+  width: 30%;
+  text-align: center;
 }
 .scores{
 	float:right;
 	color:#FFF;
 	display: inline-block;
 	font-size:30px;
-	width:300px;
+	width:30%;
+	padding-top:10px;
+}
+
+.announce {
+	  background:rgba(255,255,255,0.5);
+		width:700px;
+		text-align: center;
+		font-size:60px;
+		color:#ffcc66;
+		margin:0 auto;
+		z-index: 7;
 }
