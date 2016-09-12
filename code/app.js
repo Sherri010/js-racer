@@ -133,12 +133,13 @@ function resetGame(){
 						p2IsAt = 0;
 						if(document.getElementById('playground').lastChild.className =='announce')
 					  document.getElementById('playground').removeChild(announce);
-						if(round > 3){round=0;
+						if(round == 3){
+							  round=0;
 								bpoint=0;
 								rpoint=0;
 								localStorage.setItem('red','0');
 								localStorage.setItem('blue','0');
-							  document.getElementsByClassName('team-red')[0].textContent="0";
-								document.getElementsByClassName('team-blue')[0].textContent="0";
+							  document.getElementsByClassName('team-red')[0].textContent="Red Ship: 0 points";
+								document.getElementsByClassName('team-blue')[0].textContent="Blue Ship: 0 points";
 						}
 }
