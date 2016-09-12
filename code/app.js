@@ -1,7 +1,8 @@
 
-document.getElementsByTagName('body')[0].addEventListener("keydown",addMiles);
+
 document.getElementById('start').addEventListener('click',startTime);
-document.getElementById('timer').textContent="00:00";
+document.getElementById('timer').textContent="00 : 00";
+document.getElementsByClassName('scores')[0];
 var player1 = document.getElementById('p1');
 var player2 = document.getElementById('p2');
 var p1IsAt = 0;
@@ -32,13 +33,35 @@ function addMiles(e){
 }
 
 function scoreCheck(){
-	if(p1IsAt >= 1350) { alert("Red Laser Win!");}
-	if(p2IsAt >= 1350) { alert("Blue Laser Win!");}
+	if(p1IsAt >= 1350) {announcer("Red Ship"); }//alert("Red Laser Win!");}
+	if(p2IsAt >= 1350) {announcer("Blue Ship"); }//alert("Blue Laser Win! "+ );}
 }
 
 
+
+
+function announcer(winner){
+
+  var winning_time=document.getElementById('timer').textContent;
+	var announce=document.createElement('div');
+	announce.style.background="#fff";
+	announce.style.width="500px";
+	announce.style.margin="0 auto";
+	announce.style.zIndex="10";
+	announce.textContent= winner +" win in "+ winning_time ;
+  document.getElementById('playground').appendChild(announce);
+
+
+
+}
+
+
+
+
+/// timer
 function startTime() {
   document.getElementById('start').style.visibility="hidden";
+	document.getElementsByTagName('body')[0].addEventListener("keydown",addMiles);
 	var timer= document.getElementById('timer');
 	        var totalSeconds = 0;
 	        setInterval(setTime, 1000);

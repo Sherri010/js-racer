@@ -7,6 +7,17 @@ body {
 	 height: 90vh;
 	 font-family: 'Rajdhani', sans-serif;
 }
+ul {
+	margin:0px;
+}
+p {
+	margin:2px;
+	color:yellow;
+	letter-spacing: 2px;
+ text-decoration: underline;
+ margin-left:15px;
+}
+
 .title{
 	font-family: 'Bungee Shade', cursive;
 	font-size: 60px;
@@ -58,7 +69,7 @@ body {
 #playground{
 	 min-height: 510px;
 	 max-width: 1400px;
-	 margin:50px 50px 100px 200px;
+	 margin:50px 50px 50px 200px;
    position:relative;
 	 border-right:dotted 5px #ffdd99;
 }
@@ -67,15 +78,18 @@ body {
 	margin:0 auto;
 	min-height:100px;
 /*	border:1px solid white;*/
-	padding:20px 40px;
+	padding:0px 40px;
 }
 #timer {
 	float:left;
 	color:#fff;
 	font-size: 40px;
+	display: inline-block;
 }
 .scores{
-	border:solid 1px blue;
 	float:right;
-	color:red;
+	color:#FFF;
+	display: inline-block;
+	font-size:30px;
+	width:300px;
 }
