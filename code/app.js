@@ -92,11 +92,12 @@ function announcer(winner){
 
   var totalSeconds = 0;
 	var timer= document.getElementById('timer');
+  var T;
 /// timer
 function startTime(flag) {
 	if(flag == 'reset'){
-	  	 clearInterval(setTime);
-      document.getElementById('timer').innerHTML="00 : 00";
+	  	 clearInterval(T);
+        document.getElementById('timer').innerHTML="00 : 00";
 	}
 	else{
 		round++;
@@ -104,7 +105,7 @@ function startTime(flag) {
 		document.getElementById('timer').style.visibility="visible";
 	  document.getElementsByTagName('body')[0].addEventListener("keydown",addMiles);
 		totalSeconds = 0;
-    setInterval(setTime, 1000);
+    T=setInterval(setTime, 1000);
  }
 }
 
