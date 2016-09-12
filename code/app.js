@@ -3,9 +3,13 @@
 //add points
 document.getElementById('start').addEventListener('click',startTime);
 document.getElementById('reset').addEventListener('click',resetGame);
+document.getElementById('how').addEventListener('click',function(){
+      document.getElementById('playground').appendChild(instruct);
+});
 document.getElementById('timer').textContent="00 : 00";
 document.getElementsByClassName('scores')[0];
 var announce=document.createElement('div');
+var instruct=document.createElement('div');
 announce.setAttribute("class","announce");
 var player1 = document.getElementById('p1');
 var player2 = document.getElementById('p2');
@@ -17,8 +21,24 @@ localStorage.setItem('blue','0');
 var round=0;
 var bpoint=0;
 var rpoint=0;
+howTo();
 
 
+function howTo(){
+instruct.setAttribute('class',"rules");
+var btn= document.createElement('button');
+btn.addEventListener('click',function(){
+  document.getElementById('playground').removeChild(instruct);
+});
+btn.setAttribute('class','small-bnt');
+btn.textContent="Got It";
+var p=document.createElement('p');
+p.textContent='Use Up arrow to navigate Red Ship and Down arrow for Blue Ship. Each Game is consisted of three race. The ultimate winner should score 2 or higher.';
+p.style.textDecoration="none";
+instruct.appendChild(p);
+instruct.appendChild(btn);
+
+}
 
 function addMiles(e){
 
@@ -118,7 +138,7 @@ function resetGame(){
 								rpoint=0;
 								localStorage.setItem('red','0');
 								localStorage.setItem('blue','0');
-									document.getElementsByClassName('team-red')[0].textContent="0";
-									document.getElementsByClassName('team-blue')[0].textContent="0";
+							  document.getElementsByClassName('team-red')[0].textContent="0";
+								document.getElementsByClassName('team-blue')[0].textContent="0";
 						}
 }

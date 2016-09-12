@@ -12,7 +12,7 @@ ul {
 }
 p {
 	margin:2px;
-	color:yellow;
+	color:#ffe680;
 	letter-spacing: 2px;
  text-decoration: underline;
  margin-left:15px;
@@ -103,11 +103,33 @@ li {font-size:22px;}
 }
 
 .announce {
-	  background:rgba(255,255,255,0.5);
+	  background:rgba(255,255,255,0.2);
 		width:700px;
 		text-align: center;
 		font-size:60px;
 		color:#ffcc66;
 		margin:0 auto;
 		z-index: 7;
+}
+
+.rules{
+	background: rgba(255,255,255,0.2);
+	color:#ffd9b3;
+	margin:0 auto;
+	width:700px;
+	font-size:20px;
+	z-index:7;
+	padding:50px;
+	border-radius: 3px;
+	line-height:35px;
+
+}
+.small-bnt {
+	border:none;
+	padding:10px;
+	background:#95b7b7;
+	margin:0 auto;
+	display: block;
+	color:#fff;
+
 }
